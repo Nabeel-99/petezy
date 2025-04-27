@@ -8,10 +8,15 @@ import SlideThree from "./slides/SlideThree";
 import SlideFour from "./slides/SlideFour";
 import SlideFive from "./slides/SlideFive";
 
+// @ts-ignore
 import "swiper/css";
+// @ts-ignore
 import "swiper/css/navigation";
+// @ts-ignore
 import "swiper/css/pagination";
+// @ts-ignore
 import "swiper/css/bundle";
+// @ts-ignore
 import "swiper/css/effect-fade";
 
 import LargeNavigation from "./LargeNavigation";
