@@ -12,7 +12,7 @@ import Input from "./Input";
 const Footer = () => {
   return (
     <footer className="flex   w-full flex-col bg-[#121212] text-white mt-10 lg:mt-40 ">
-      <div className="flex flex-col  px-10 items-center lg:flex-row xl:px-30  text-white py-20 lg:py-30 gap-10  lg:justify-between lg:items-end w-full lg:gap-[107px]">
+      <div className="flex flex-col 2xl:container 2xl:mx-auto  px-10 items-center lg:flex-row xl:px-30  text-white py-20 lg:py-30 gap-10  lg:justify-between lg:items-end w-full lg:gap-[107px]">
         <div className="flex flex-col items-center gap-6">
           <img src={Logo} alt="logo" className="  object-contain w-32 h-32" />
           <p className="xl:text-xl">
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="h-[0.5px] lg:mx-30 bg-[#858585]" />
-      <div className="flex flex-col w-full lg:flex-row items-center xl:px-30 pt-10 gap-10 xl:gap-20 pb-16 ">
+      <div className="flex flex-col 2xl:container 2xl:mx-auto w-full lg:flex-row items-center xl:px-30 pt-10 gap-10 xl:gap-20 pb-16 ">
         <div className="flex items-center gap-1">
           <CiGlobe className="text-blue-300" />
           <span className="">Follow Our Journey</span>

@@ -8,7 +8,7 @@ const Input = () => {
       />
       <button
         type="submit"
-        className="bg-blue-500 h-full rounded-r-xl xl:py-3 px-6 text-white"
+        className="bg-blue-500 w-full xl:w-[180px] h-full  min-[1152px]:py-3 rounded-r-xl  px-6 text-white"
       >
         Join Waitlist
       </button>
