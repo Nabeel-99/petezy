@@ -12,10 +12,10 @@ import Input from "./Input";
 const Footer = () => {
   return (
     <footer className="flex   w-full flex-col bg-[#121212] text-white mt-10 lg:mt-40 ">
-      <div className="flex flex-col 2xl:container 2xl:mx-auto  px-10 items-center lg:flex-row xl:px-30  text-white py-20 lg:py-30 gap-10  lg:justify-between lg:items-end w-full lg:gap-[107px]">
+      <div className="flex flex-col   px-10 items-center lg:flex-row xl:px-30  text-white py-20 lg:py-30 gap-10  lg:justify-between lg:items-end w-full lg:gap-[107px]">
         <div className="flex flex-col items-center gap-6">
           <img src={Logo} alt="logo" className="  object-contain w-32 h-32" />
-          <p className="xl:text-xl">
+          <p className="xl:text-xl w-full">
             Where Pet Care Meets <br className="hidden lg:block" /> Peace Of
             Mind.
           </p>
