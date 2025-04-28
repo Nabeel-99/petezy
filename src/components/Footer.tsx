@@ -12,15 +12,18 @@ const Footer = () => {
   return (
     <footer className="flex  w-full flex-col bg-[#121212] text-white mt-10 lg:mt-40 ">
       <div className="px-10 lg:px-24  2xl:container 2xl:mx-auto">
-        <div className="flex flex-col   items-center xl:flex-row   text-white py-20 lg:py-30 gap-10  xl:justify-between xl:items-end w-full lg:gap-[107px]">
-          <div className="flex flex-col items-center w-full  gap-6">
-            <img src={Logo} alt="logo" className="  object-contain w-32 h-32" />
+        <div className="flex flex-col   items-center xl:flex-row   text-white py-20 lg:py-30 gap-10 xl:justify-start xl:items-end w-full lg:gap-20">
+          <div className="flex flex-col  items-start justify-center   gap-6">
+            <img
+              src={Logo}
+              alt="logo"
+              className="  mx-auto object-contain w-32 h-32"
+            />
             <p className="xl:text-xl text-nowrap">
-              Where Pet Care Meets <br className="hidden lg:block" /> Peace Of
-              Mind.
+              Where Pet Care Meets <br className="" /> Peace Of Mind.
             </p>
           </div>
-          <div className="flex flex-col items-center xl:items-start gap-8">
+          <div className="flex flex-col  items-center xl:items-start gap-8">
             <p className="flex items-center font-bold text-2xl xl:text-3xl gap-1">
               ⏳ Launching In
             </p>
@@ -51,17 +54,17 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col lg:items-start gap-4">
+          <div className="flex flex-col  max-sm:max-w-sm xl:w-full lg:items-start gap-4">
             <p>Be The First To Know - Enter Your Email</p>
             <div className="flex items-center justify-center w-full">
               <input
                 type="text"
                 placeholder="Email"
-                className="px-4 py-3 xl:w-96 rounded-l-xl bg-white text-black"
+                className="px-4 py-3 w-full  rounded-l-xl bg-white text-black"
               />
               <button
                 type="submit"
-                className="bg-blue-500 sm:w-full xl:w-1/2 py-0  min-[584px]:py-3   2xl:py-3 rounded-r-xl  px-6 text-white"
+                className="bg-blue-500 text-nowrap px-4 py-3 rounded-r-xl text-white"
               >
                 Join Waitlist
               </button>
