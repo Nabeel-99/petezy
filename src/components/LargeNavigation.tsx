@@ -19,24 +19,22 @@ const LargeNavigation = ({
               activeIndex === index ? "custom-bullet-active" : ""
             }`}
           />
-          {activeIndex === index && (
-            <div className="absolute  flex flex-col items-center gap-4 -translate-x-1/2 left-1/2">
-              <div
-                onClick={handlePrev}
-                className="custom-prev cursor-pointer translate-x-10 transition-all ease-in-out duration-500"
-              >
-                <FaChevronCircleUp size={24} className="text-[#1c1a1a]" />
-              </div>
-              <div
-                onClick={handleNext}
-                className="custom-next cursor-pointer translate-x-10 transition-all ease-in-out duration-500"
-              >
-                <FaChevronCircleDown size={24} className="text-[#1c1a1a]" />
-              </div>
-            </div>
-          )}
         </div>
       ))}
+      <div className="absolute  flex flex-col items-center gap-4 -translate-x-1/2 top-1/2 -translate-y-1/2 left-1/2">
+        <div
+          onClick={handlePrev}
+          className="custom-prev cursor-pointer translate-x-10 transition-all ease-in-out duration-500"
+        >
+          <FaChevronCircleUp size={24} className="text-[#1c1a1a]" />
+        </div>
+        <div
+          onClick={handleNext}
+          className="custom-next cursor-pointer translate-x-10 transition-all ease-in-out duration-500"
+        >
+          <FaChevronCircleDown size={24} className="text-[#1c1a1a]" />
+        </div>
+      </div>
     </div>
   );
 };
