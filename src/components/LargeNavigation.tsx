@@ -11,7 +11,7 @@ const LargeNavigation = ({
   handleNext,
 }: LargeScreenNavigationProps) => {
   return (
-    <div className="max-sm:hidden absolute left-1/2   top-1/2 transform -translate-y-1/2 flex flex-col items-center gap-4 z-50">
+    <div className="max-md:hidden absolute left-1/2   top-1/2 transform -translate-y-1/2 flex flex-col items-center gap-4 z-50">
       {Array.from({ length: 5 }).map((_, index) => (
         <div key={index} className="flex items-center ">
           <div

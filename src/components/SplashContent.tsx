@@ -16,7 +16,7 @@ const SplashContent = ({
 }: SplashScreenProps) => {
   return (
     <div
-      className={`flex bg-white max-sm:-translate-y-[120px]  max-sm:pb-20 max-sm:rounded-b-3xl md:rounded-r-3xl flex-col max-sm:justify-around md:justify-between gap-10 p-4 max-sm:pt-32 md:p-12 xl:pt-20  w-full md:w-1/2 h-full items-center`}
+      className={`flex bg-white max-sm:-translate-y-[120px]  max-sm:pb-20 max-md:rounded-b-3xl md:rounded-r-3xl flex-col max-sm:justify-around md:justify-between gap-10 p-4 max-sm:pt-32 md:p-12 xl:pt-20  w-full md:w-1/2 h-full items-center`}
     >
       <div className="flex flex-col items-center gap-10">
         <p

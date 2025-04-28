@@ -2,7 +2,7 @@ import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
 const MobileNavigation = ({ activeIndex, handlePrev, handleNext }: any) => {
   return (
-    <div className="flex z-50 pb-10 items-center justify-center gap-6 md:hidden">
+    <div className="flex z-50 pb-10 items-center justify-center bg-white gap-6 md:hidden">
       <div onClick={handlePrev} className="cursor-pointer">
         <FaChevronCircleLeft size={32} className="text-[#1c1a1a]" />
       </div>
