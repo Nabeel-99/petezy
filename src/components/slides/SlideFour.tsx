@@ -2,7 +2,6 @@ import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
 import Splash4 from "../../assets/images/splash4.png";
 import SlideWrapper from "../SlideWrapper";
-import MobileNavigation from "../MobileNavigation";
 
 interface NavigationProps {
   activeIndex: number;
@@ -23,21 +22,20 @@ const SlideFour = ({
   return (
     <SlideWrapper>
       <SplashScreen title="📅 Everyday Tracking Made Easy" image={Splash4} />
-      <MobileNavigation
-        activeIndex={activeIndex}
-        handlePrev={handlePrev}
-        handleNext={handleNext}
-      />
+
       <SplashContent
         title={
           <>
             <span className=" text-center   ">
-              Stay Connected To Your <br /> Pet’s Daily Rhythm And <br />{" "}
-              Well-being.
+              Stay Connected To Your <br className="max-sm:hidden" /> Pet’s
+              Daily Rhythm And <br className="max-sm:hidden" /> Well-being.
             </span>
           </>
         }
-        slide={3}
+        activeIndex={activeIndex}
+        handleNext={handleNext}
+        handlePrev={handlePrev}
+        slide={4}
         listDetails={splashDetails}
         text="Turn everyday routines into smarter pet care decisions."
       />

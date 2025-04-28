@@ -93,7 +93,7 @@ const Splash = () => {
         direction="horizontal"
         className="relative flex flex-col transition-all ease-in-out duration-500 w-full h-full "
         spaceBetween={50}
-        autoplay={{ delay: 15000 }}
+        autoplay={{ delay: 200000 }}
         watchSlidesProgress={true}
         allowTouchMove={true}
       >

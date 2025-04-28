@@ -2,7 +2,6 @@ import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
 import Splash5 from "../../assets/images/splash5.png";
 import SlideWrapper from "../SlideWrapper";
-import MobileNavigation from "../MobileNavigation";
 
 interface NavigationProps {
   activeIndex: number;
@@ -23,22 +22,21 @@ const SlideFive = ({
   return (
     <SlideWrapper>
       <SplashScreen title="📲 Book with a Tap" image={Splash5} />
-      <MobileNavigation
-        activeIndex={activeIndex}
-        handlePrev={handlePrev}
-        handleNext={handleNext}
-      />
+
       <SplashContent
         title={
           <>
             <span className=" text-center   ">
-              Easily Find And Book <br />
-              Trusted Pet-Care <br />
+              Easily Find And Book <br className="max-sm:hidden" />
+              Trusted Pet-Care <br className="max-sm:hidden" />
               Services In Seconds.
             </span>
           </>
         }
-        slide={3}
+        activeIndex={activeIndex}
+        handleNext={handleNext}
+        handlePrev={handlePrev}
+        slide={5}
         listDetails={splashDetails}
         text="Petezy makes pet-care scheduling effortless."
       />

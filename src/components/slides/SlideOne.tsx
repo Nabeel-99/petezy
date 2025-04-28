@@ -3,7 +3,6 @@ import SplashContent from "../SplashContent";
 import Splash1 from "../../assets/images/splash1.png";
 import { PiPawPrintFill } from "react-icons/pi";
 import SlideWrapper from "../SlideWrapper";
-import MobileNavigation from "../MobileNavigation";
 
 interface NavigationProps {
   activeIndex: number;
@@ -14,11 +13,6 @@ const SlideOne = ({ activeIndex, handlePrev, handleNext }: NavigationProps) => {
   return (
     <SlideWrapper>
       <SplashScreen title="Meet Petezy" image={Splash1} />
-      <MobileNavigation
-        activeIndex={activeIndex}
-        handlePrev={handlePrev}
-        handleNext={handleNext}
-      />
       <SplashContent
         title={
           <>
@@ -31,6 +25,9 @@ const SlideOne = ({ activeIndex, handlePrev, handleNext }: NavigationProps) => {
             <span> Petezy Beta Tester </span>
           </>
         }
+        activeIndex={activeIndex}
+        handleNext={handleNext}
+        handlePrev={handlePrev}
         description=" 💬 Get early access, exclusive perks, and be part of a pet-loving community building the next big thing for pets and sitters."
         slide={1}
         text="We’ll reach out soon! Only real pet lovers allowed 😻🐶"

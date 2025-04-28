@@ -3,7 +3,7 @@ import SplashContent from "../SplashContent";
 import Splash2 from "../../assets/images/splash2.png";
 import { PiPawPrintFill } from "react-icons/pi";
 import SlideWrapper from "../SlideWrapper";
-import MobileNavigation from "../MobileNavigation";
+
 interface NavigationProps {
   activeIndex: number;
   handlePrev: () => void;
@@ -20,26 +20,26 @@ const SlideTwo = ({ activeIndex, handlePrev, handleNext }: NavigationProps) => {
   return (
     <SlideWrapper>
       <SplashScreen title="Smart Pet Profiles" image={Splash2} />
-      <MobileNavigation
-        activeIndex={activeIndex}
-        handlePrev={handlePrev}
-        handleNext={handleNext}
-      />
+
       <SplashContent
         title={
           <>
             <span className="flex items-start text-center justify-center ">
               {" "}
-              <PiPawPrintFill className="text-3xl mt-2 -rotate-10" />
-              <PiPawPrintFill className="text-3xl mt-6 mr-2 rotate-45" />
+              <PiPawPrintFill className="text-2xl xl:text-3xl -mt-4 md:mt-2 -rotate-10" />
+              <PiPawPrintFill className="text-2xl xl:text-3xl md:mt-6 mr-2 rotate-45" />
               Pet Info, All In <br />
             </span>
-            <span>One Place </span>
+            <span className="ml-5">One Place </span>
           </>
         }
         description="Keep everything about your pets organized and accessible."
         listDetails={splashDetails}
         text="Managing multiple pets has never been this easy."
+        activeIndex={activeIndex}
+        handleNext={handleNext}
+        handlePrev={handlePrev}
+        slide={2}
       />
     </SlideWrapper>
   );
