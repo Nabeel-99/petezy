@@ -10,7 +10,7 @@ import { FaFacebook, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex  w-full flex-col bg-[#121212] text-white mt-10 lg:mt-40 ">
+    <footer className="flex  w-full flex-col bg-[#121212] text-white  lg:mt-40 ">
       <div className="px-10 lg:px-24  2xl:container 2xl:mx-auto">
         <div className="flex flex-col   items-center xl:flex-row   text-white py-20 lg:py-30 gap-10 xl:justify-start xl:items-end w-full lg:gap-20">
           <div className="flex flex-col  items-start justify-center   gap-6">
