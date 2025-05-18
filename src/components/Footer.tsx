@@ -1,65 +1,65 @@
 import Logo from "../assets/images/logo.png";
 import { CiGlobe } from "react-icons/ci";
-import {
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-  FaWhatsapp,
-} from "react-icons/fa6";
-import { FaFacebook, FaTelegramPlane } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
+
+import { TiSocialLinkedin } from "react-icons/ti";
 
 const Footer = () => {
   return (
-    <footer className="flex  w-full flex-col bg-[#121212] text-white  lg:mt-40 ">
-      <div className="px-10 lg:px-24  2xl:container 2xl:mx-auto">
-        <div className="flex flex-col   items-center xl:flex-row   text-white py-20 lg:py-30 gap-10 xl:justify-start xl:items-end w-full lg:gap-20">
+    <footer className="flex max-s w-full flex-col bg-[#121212] text-white  lg:mt-40 ">
+      <div className="px-4 lg:px-26 p-14  2xl:container 2xl:mx-auto flex flex-col gap-10 ">
+        <div className="flex flex-col    items-center xl:flex-row   text-white gap-10 xl:justify-start xl:items-end w-full lg:gap-20">
           <div className="flex flex-col  items-start justify-center   gap-6">
             <img
               src={Logo}
               alt="logo"
               className="  mx-auto object-contain w-32 h-32"
             />
-            <p className="xl:text-xl text-nowrap">
-              Where Pet Care Meets <br className="" /> Peace Of Mind.
+            <p className="xl:text-xl font-normal text-[#e8f3fe] text-nowrap">
+              Where Pet Care Meets <br className="max-sm:hidden" /> Peace Of
+              Mind.
             </p>
           </div>
           <div className="flex flex-col  items-center xl:items-start gap-8">
             <p className="flex items-center font-bold text-2xl xl:text-3xl gap-1">
               ⏳ Launching In
             </p>
-            <div className="flex items-center w-full gap-2 lg:gap-4">
+            <div className="flex font-medium sm:text-lg items-center w-full gap-6 lg:gap-4">
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className=" p-2 xl:px-4 xl:py-3 rounded-2xl bg-[#ffa500] text-black">
+                <span className=" p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
                   25
                 </span>
                 <span>Days</span>
               </div>
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className="p-2 xl:px-4 xl:py-3 rounded-2xl bg-[#ffa500] text-black">
+                <span className="p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
                   12
                 </span>
                 <span>Hrs</span>
               </div>
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className="p-2 xl:px-4 xl:py-3 rounded-2xl bg-[#ffa500] text-black">
+                <span className="p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
                   45
                 </span>
                 <span>Mns</span>
               </div>
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className="p-2 xl:px-4 xl:py-3 rounded-2xl bg-[#ffa500] text-black">
+                <span className="p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
                   07
                 </span>
                 <span>Sec</span>
               </div>
             </div>
           </div>
-          <div className="flex flex-col  max-sm:max-w-sm xl:w-full lg:items-start gap-4">
-            <p>Be The First To Know - Enter Your Email</p>
+          <div className="flex flex-col  w-full lg:items-start gap-4">
+            <p className="text-left font-nunito">
+              Be The First To Know - Enter Your Email
+            </p>
             <div className="flex items-center justify-center w-full">
               <input
                 type="text"
-                placeholder="Email"
+                placeholder="Yourname@Email.com"
                 className="px-4 py-3 w-full  rounded-l-xl bg-white text-black"
               />
               <button
@@ -71,10 +71,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="h-[0.5px]  w-full max-sm:hidden bg-[#858585]" />
+        <div className="h-[1px]   bg-[#858585]" />
       </div>
-      <div className="h-[0.5px]  w-full sm:hidden bg-[#858585]" />
-      <div className="flex flex-col max-md:justify-center lg:px-24 w-full lg:flex-row items-center 2xl:container 2xl:mx-auto  pt-10 gap-10 xl:gap-20 pb-16 ">
+      {/* <div className="h-[1px]  mx-8 sm:hidden bg-[#858585]" /> */}
+      <div className="flex flex-col max-md:justify-center lg:px-24 w-full lg:flex-row items-center 2xl:container 2xl:mx-auto   gap-6 xl:gap-20 pb-10 ">
         <div className="flex items-center gap-1">
           <CiGlobe className="text-blue-300" />
           <span className="">Follow Our Journey</span>
@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="flex items-center text-white gap-4">
           <a href="/" rel="noopener noreferrer" target="_blank">
             {" "}
-            <FaFacebook className="text-[#1877F2] bg-white rounded-full text-4xl xl:text-2xl" />
+            <FaFacebookF className="text-white bg-[#1877F2] rounded-full pt-1 text-4xl xl:text-2xl" />
           </a>
           <a href="/" rel="noopener noreferrer" target="_blank">
             {" "}
@@ -94,7 +94,7 @@ const Footer = () => {
           </a>
           <a href="/" rel="noopener noreferrer" target="_blank">
             {" "}
-            <FaLinkedinIn className="bg-[#0077B5] text-4xl xl:text-2xl rounded-full p-1 xl:p-0.5" />{" "}
+            <TiSocialLinkedin className="bg-[#0077B5] text-4xl xl:text-2xl rounded-full  " />{" "}
           </a>
           <a href="/" rel="noopener noreferrer" target="_blank">
             {" "}

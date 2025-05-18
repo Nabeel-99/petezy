@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <div className="flex flex-col h-full relative w-screen ">
+      <div className="flex flex-col h-full  relative w-screen ">
         <Background />
         <Navbar />
         <Hero />

@@ -70,7 +70,7 @@ const Splash = () => {
   ];
 
   return (
-    <div className=" max-w-[1280px] flex flex-col  text-black mx-auto w-full  xl:h-[1080px] ">
+    <div className="mt-20 bg-white rounded-2xl max-w-[1280px] flex flex-col max-sm:h-[1280px]   border border-white  text-black mx-auto w-full  xl:h-[1080px] ">
       <Swiper
         modules={[Pagination, Navigation, Autoplay, EffectFade]}
         effect="fade"

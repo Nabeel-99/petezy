@@ -24,12 +24,12 @@ const SplashContent = ({
   return (
     <>
       <div
-        className={`flex flex-col md:w-1/2 gap-0 
-    ${slide === 1 ? "max-sm:-translate-y-[70px]" : ""}
+        className={`flex flex-col h-full md:w-1/2 gap-0 
+ ${slide === 1 ? "max-sm:-translate-y-[90px]" : ""}
     ${slide === 2 ? "max-sm:-translate-y-[190px]" : ""}
     ${slide === 3 ? "max-sm:-translate-y-[200px]" : ""}
-      ${slide === 4 ? "max-sm:-translate-y-[120px]" : ""}
-        ${slide === 5 ? "max-sm:-translate-y-[185px]" : ""}
+      ${slide === 4 ? "max-sm:-translate-y-[110px]" : ""}
+        ${slide === 5 ? "max-sm:-translate-y-[180px]" : ""} 
   `}
       >
         <MobileNavigation
@@ -40,9 +40,9 @@ const SplashContent = ({
         <div
           className={` bg-white ${
             slide === 1 ? " " : ""
-          } flex flex-col items-center gap-8 pb-20 p-4 md:p-16 max-sm:rounded-b-3xl xl:pt-20 w-full md:justify-between h-full md:rounded-r-3xl`}
+          } flex flex-col items-center gap-8  p-4 md:p-16 max-sm:rounded-b-3xl xl:pt-20 w-full max-sm:justify-around md:justify-between h-full md:rounded-r-3xl`}
         >
-          <div className="flex flex-col items-center gap-10">
+          <div className="flex flex-col font-catamaran items-center gap-10">
             <p
               className={` text-center font-bold ${
                 slide === 3 || slide === 4 || slide === 5
@@ -53,7 +53,7 @@ const SplashContent = ({
               {title}
             </p>
             {description && (
-              <p className="max-sm:text-base xl:text-xl">{description}</p>
+              <p className="max-sm:text-sm xl:text-xl">{description}</p>
             )}
           </div>
           {slide === 1 ? (
@@ -73,19 +73,19 @@ const SplashContent = ({
           ) : (
             <div className=" flex flex-col max-w-md border border-[#dadada] bg-white p-6 rounded-xl shadow-md gap-6">
               {listDetails?.map((item, index) => (
-                <ul key={index}>
+                <ul key={index} className="font-catamaran">
                   <li className="flex items-center text-start gap-4">
                     <span className="text-[#f4a261]">
                       <FaCheckCircle className="text-xl" />
                     </span>
-                    <p className="text-lg">{item}</p>
+                    <p className="text-md lg:text-lg">{item}</p>
                   </li>
                 </ul>
               ))}
             </div>
           )}
 
-          <p className="text-blue-500 font-bold xl:leading-14 text-2xl xl:text-4xl">
+          <p className="text-blue-500 font-bold xl:leading-14 text-xl xl:text-4xl">
             {text}
           </p>
         </div>
