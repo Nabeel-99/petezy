@@ -70,7 +70,7 @@ const Splash = () => {
   ];
 
   return (
-    <div className="mt-20 bg-white rounded-2xl max-w-[1280px] flex flex-col max-sm:h-[1280px]   border border-white  text-black mx-auto w-full  xl:h-[1080px] ">
+    <div className="max-xl:mt-20 relative bg-white rounded-4xl max-w-[1280px] flex flex-col max-sm:h-[1300px]   border border-white  text-black mx-auto w-full   xl:h-[900px] ">
       <Swiper
         modules={[Pagination, Navigation, Autoplay, EffectFade]}
         effect="fade"
@@ -91,9 +91,9 @@ const Splash = () => {
         }}
         loop={true}
         direction="horizontal"
-        className="relative flex flex-col transition-all ease-in-out duration-500 w-full h-full "
+        className=" flex flex-col transition-all ease-in-out duration-500 w-full h-full "
         spaceBetween={50}
-        autoplay={{ delay: 15000 }}
+        autoplay={{ delay: 150000 }}
         watchSlidesProgress={true}
         allowTouchMove={true}
       >

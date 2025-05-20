@@ -24,12 +24,8 @@ const SplashContent = ({
   return (
     <>
       <div
-        className={`flex flex-col h-full md:w-1/2 gap-0 
- ${slide === 1 ? "max-sm:-translate-y-[90px]" : ""}
-    ${slide === 2 ? "max-sm:-translate-y-[190px]" : ""}
-    ${slide === 3 ? "max-sm:-translate-y-[200px]" : ""}
-      ${slide === 4 ? "max-sm:-translate-y-[110px]" : ""}
-        ${slide === 5 ? "max-sm:-translate-y-[180px]" : ""} 
+        className={`max-sm:absolute flex flex-col   left-0 right-0 bg-white md:rounded-r-4xl  max-sm:top-[500px] z-20 md:w-1/2 gap-0 
+
   `}
       >
         <MobileNavigation
@@ -38,22 +34,22 @@ const SplashContent = ({
           handleNext={handleNext}
         />
         <div
-          className={` bg-white ${
+          className={`  ${
             slide === 1 ? " " : ""
-          } flex flex-col items-center gap-8  p-4 md:p-16 max-sm:rounded-b-3xl xl:pt-20 w-full max-sm:justify-around md:justify-between h-full md:rounded-r-3xl`}
+          } flex flex-col items-center gap-8  p-4 md:p-16  w-full max-sm:justify-around max-sm:h-[600px] md:justify-between h-full md:rounded-r-3xl`}
         >
-          <div className="flex flex-col font-catamaran items-center gap-10">
+          <div className="flex flex-col font-catamaran items-center gap-6">
             <p
               className={` text-center font-bold ${
                 slide === 3 || slide === 4 || slide === 5
                   ? "text-3xl leading-10 xl:text-4xl xl:leading-14"
-                  : "text-4xl xl:text-6xl xl:leading-20"
+                  : "text-4xl xl:text-5xl xl:leading-18"
               } text-center `}
             >
               {title}
             </p>
             {description && (
-              <p className="max-sm:text-sm xl:text-xl">{description}</p>
+              <p className="max-sm:text-md xl:text-xl">{description}</p>
             )}
           </div>
           {slide === 1 ? (
@@ -61,11 +57,11 @@ const SplashContent = ({
               <input
                 type="text"
                 placeholder="Enter Your Email Address"
-                className="px-4 py-3 w-full xl:w-3/4 mx-auto border rounded-xl  bg-white text-black"
+                className="px-4 py-3 w-full xl:w-3/4 mx-auto border border-black/40 rounded-xl  bg-white text-black"
               />
               <button
                 type="submit"
-                className="bg-blue-500 font-bold w-full xl:w-3/4 mx-auto  py-3 rounded-xl text-white"
+                className="bg-[#0B5EAA] font-bold w-full xl:w-3/4 mx-auto  py-3 rounded-xl text-white"
               >
                 Become a Beta Tester
               </button>
@@ -78,14 +74,14 @@ const SplashContent = ({
                     <span className="text-[#f4a261]">
                       <FaCheckCircle className="text-xl" />
                     </span>
-                    <p className="text-md lg:text-lg">{item}</p>
+                    <p className="text-sm lg:text-lg">{item}</p>
                   </li>
                 </ul>
               ))}
             </div>
           )}
 
-          <p className="text-blue-500 font-bold xl:leading-14 text-xl xl:text-4xl">
+          <p className="text-[#0B5EAA] font-bold xl:leading-14 text-xl xl:text-4xl">
             {text}
           </p>
         </div>

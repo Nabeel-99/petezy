@@ -26,13 +26,13 @@ const LargeNavigation = ({
           onClick={handlePrev}
           className="custom-prev cursor-pointer translate-x-10 transition-all ease-in-out duration-500"
         >
-          <FaChevronCircleUp size={24} className="text-[#1c1a1a]" />
+          <FaChevronCircleUp size={24} className="text-[#092f55]" />
         </div>
         <div
           onClick={handleNext}
           className="custom-next cursor-pointer translate-x-10 transition-all ease-in-out duration-500"
         >
-          <FaChevronCircleDown size={24} className="text-[#1c1a1a]" />
+          <FaChevronCircleDown size={24} className="text-[#092f55]" />
         </div>
       </div>
     </div>

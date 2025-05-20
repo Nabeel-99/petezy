@@ -1,6 +1,7 @@
 import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
 import Splash1 from "../../assets/images/splash1.png";
+import Splash1Mobile from "../../assets/images/splash1mobile.png";
 import { PiPawPrintFill } from "react-icons/pi";
 import SlideWrapper from "../SlideWrapper";
 
@@ -12,7 +13,12 @@ interface NavigationProps {
 const SlideOne = ({ activeIndex, handlePrev, handleNext }: NavigationProps) => {
   return (
     <SlideWrapper>
-      <SplashScreen title="Meet Petezy" image={Splash1} />
+      <SplashScreen
+        title="Meet Petezy"
+        image={Splash1}
+        imageMobile={Splash1Mobile}
+        slide={1}
+      />
       <SplashContent
         title={
           <>

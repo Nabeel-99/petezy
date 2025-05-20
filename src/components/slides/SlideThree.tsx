@@ -1,6 +1,7 @@
 import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
 import Splash3 from "../../assets/images/splash3.png";
+import Splash3Mobile from "../../assets/images/splash3mobile.png";
 import SlideWrapper from "../SlideWrapper";
 
 interface NavigationProps {
@@ -21,7 +22,11 @@ const SlideThree = ({
   ];
   return (
     <SlideWrapper>
-      <SplashScreen title="⏰ Reminders That Actually Remind" image={Splash3} />
+      <SplashScreen
+        title="⏰ Reminders That Actually Remind"
+        image={Splash3}
+        imageMobile={Splash3Mobile}
+      />
       <SplashContent
         title={
           <>

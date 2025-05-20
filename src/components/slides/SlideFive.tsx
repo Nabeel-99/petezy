@@ -1,6 +1,7 @@
 import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
 import Splash5 from "../../assets/images/splash5.png";
+import Splash5Mobile from "../../assets/images/splash5mobile.png";
 import SlideWrapper from "../SlideWrapper";
 
 interface NavigationProps {
@@ -21,7 +22,11 @@ const SlideFive = ({
   ];
   return (
     <SlideWrapper>
-      <SplashScreen title="📲 Book with a Tap" image={Splash5} />
+      <SplashScreen
+        title="📲 Book with a Tap"
+        image={Splash5}
+        imageMobile={Splash5Mobile}
+      />
 
       <SplashContent
         title={

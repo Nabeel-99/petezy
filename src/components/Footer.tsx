@@ -7,9 +7,9 @@ import { TiSocialLinkedin } from "react-icons/ti";
 
 const Footer = () => {
   return (
-    <footer className="flex max-s w-full flex-col bg-[#121212] text-white  lg:mt-40 ">
-      <div className="px-4 lg:px-26 p-14  2xl:container 2xl:mx-auto flex flex-col gap-10 ">
-        <div className="flex flex-col    items-center xl:flex-row   text-white gap-10 xl:justify-start xl:items-end w-full lg:gap-20">
+    <footer className="flex  w-full flex-col bg-[#121212] text-white  mt-20 lg:mt-40 ">
+      <div className="px-4 lg:px-26 pt-10   2xl:container 2xl:mx-auto flex flex-col gap-10 ">
+        <div className="flex flex-col   pt-10   items-center xl:flex-row   text-white gap-10 xl:justify-start xl:items-end w-full lg:gap-20">
           <div className="flex flex-col  items-start justify-center   gap-6">
             <img
               src={Logo}
@@ -25,34 +25,34 @@ const Footer = () => {
             <p className="flex items-center font-bold text-2xl xl:text-3xl gap-1">
               ⏳ Launching In
             </p>
-            <div className="flex font-medium sm:text-lg items-center w-full gap-6 lg:gap-4">
+            <div className="grid grid-flow-col max-sm:text-sm gap-4 font-medium sm:text-lg items-center w-full  lg:gap-4">
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className=" p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
+                <span className=" p-2 xl:px-4  rounded-lg bg-[#ffa500] text-black">
                   25
                 </span>
                 <span>Days</span>
               </div>
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className="p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
+                <span className=" p-2 xl:px-4  rounded-lg bg-[#ffa500] text-black">
                   12
                 </span>
                 <span>Hrs</span>
               </div>
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className="p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
+                <span className=" p-2 xl:px-4  rounded-lg bg-[#ffa500] text-black">
                   45
                 </span>
                 <span>Mns</span>
               </div>
               <div className="flex items-center gap-1 lg:gap-3">
-                <span className="p-2 xl:px-4 xl:py-3 rounded-lg bg-[#ffa500] text-black">
+                <span className=" p-2 xl:px-4  rounded-lg bg-[#ffa500] text-black">
                   07
                 </span>
                 <span>Sec</span>
               </div>
             </div>
           </div>
-          <div className="flex flex-col  w-full lg:items-start gap-4">
+          <div className="flex flex-col md:max-w-lg xl:max-w-full w-full lg:items-start gap-4">
             <p className="text-left font-nunito">
               Be The First To Know - Enter Your Email
             </p>
@@ -64,7 +64,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-blue-500 text-nowrap px-4 py-3 rounded-r-xl text-white"
+                className="bg-[#0B5EAA] text-nowrap px-4 py-3 rounded-r-xl text-white"
               >
                 Join Waitlist
               </button>
@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="h-[1px]   bg-[#858585]" />
       </div>
       {/* <div className="h-[1px]  mx-8 sm:hidden bg-[#858585]" /> */}
-      <div className="flex flex-col max-md:justify-center lg:px-24 w-full lg:flex-row items-center 2xl:container 2xl:mx-auto   gap-6 xl:gap-20 pb-10 ">
+      <div className="flex flex-col max-md:justify-center pt-4 lg:px-24 w-full lg:flex-row items-center 2xl:container 2xl:mx-auto   gap-6 xl:gap-10 pb-10 ">
         <div className="flex items-center gap-1">
           <CiGlobe className="text-blue-300" />
           <span className="">Follow Our Journey</span>

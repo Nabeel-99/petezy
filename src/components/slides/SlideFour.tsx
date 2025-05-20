@@ -1,6 +1,7 @@
 import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
 import Splash4 from "../../assets/images/splash4.png";
+import Splash4Mobile from "../../assets/images/splash4mobile.png";
 import SlideWrapper from "../SlideWrapper";
 
 interface NavigationProps {
@@ -21,7 +22,11 @@ const SlideFour = ({
   ];
   return (
     <SlideWrapper>
-      <SplashScreen title="📅 Everyday Tracking Made Easy" image={Splash4} />
+      <SplashScreen
+        title="📅 Everyday Tracking Made Easy"
+        image={Splash4}
+        imageMobile={Splash4Mobile}
+      />
 
       <SplashContent
         title={
