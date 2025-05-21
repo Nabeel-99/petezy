@@ -5,7 +5,7 @@ const Navbar = () => {
       <img
         src={Logo}
         alt="logo"
-        className="max-sm:w-full object-contain max-sm:h-12"
+        className="max-sm:w-full object-contain max-sm:h-12 mx-auto  w-28 h-28"
       />
     </nav>
   );

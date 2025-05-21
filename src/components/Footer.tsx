@@ -14,7 +14,7 @@ const Footer = () => {
             <img
               src={Logo}
               alt="logo"
-              className="  mx-auto object-contain w-32 h-32"
+              className="  mx-auto object-contain w-30 h-30"
             />
             <p className="xl:text-xl font-normal text-[#e8f3fe] text-nowrap">
               Where Pet Care Meets <br className="max-sm:hidden" /> Peace Of
