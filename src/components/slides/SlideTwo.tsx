@@ -1,6 +1,6 @@
 import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
-import Splash2 from "../../assets/images/splash2.png";
+import Splash2 from "../../assets/images/splash2.svg";
 import Splash2Mobile from "../../assets/images/splash2mobile.svg";
 import { PiPawPrintFill } from "react-icons/pi";
 import SlideWrapper from "../SlideWrapper";

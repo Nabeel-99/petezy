@@ -1,7 +1,7 @@
 import SplashScreen from "../SplashScreen";
 import SplashContent from "../SplashContent";
-import Splash4 from "../../assets/images/splash4.png";
-import Splash4Mobile from "../../assets/images/splash4mobile.png";
+import Splash4 from "../../assets/images/splash4.svg";
+import Splash4Mobile from "../../assets/images/splash4mobile.svg";
 import SlideWrapper from "../SlideWrapper";
 
 interface NavigationProps {
